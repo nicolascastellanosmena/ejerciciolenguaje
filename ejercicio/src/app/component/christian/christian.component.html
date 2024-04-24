@@ -1,1 +1,12 @@
-<p>christian works!</p>
+<div class="d-flex flex-wrap justify-content-center">
+@for (carta of api.cards; track carta) {
+<div class="card m-3" style="width: 18rem">
+  <img src="{{ carta.imageUrl }}" class="card-img-top" alt="asdasd" />
+  <div class="card-body">
+    <h5 class="card-title">{{ carta.name }}</h5>
+    <p class="card-text">{{ carta.text }}</p>
+    <a href="#" class="btn btn-primary">{{ carta.artist }}</a>
+  </div>
+</div>
+}
+</div>
