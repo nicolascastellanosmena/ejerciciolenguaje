@@ -1,1 +1,39 @@
-<p>nico works!</p>
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Ejemplo Ejercicio API</h1>
+                <p class="lead text-body-secondary">
+                    Este es un ejercicio diseñado para poner a prueba la funcionalidad de las APIs, explorando cómo
+                    interactúan distintos sistemas a través de la transferencia de datos y solicitudes. La integración
+                    de APIs permite una comunicación eficiente entre aplicaciones, facilitando el intercambio de
+                    información y potenciando la interoperabilidad entre plataformas.</p>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=9af3xfMfMME" class="btn btn-primary my-2">Okie dokie</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container d-flex flex-wrap justify-content-center">
+             
+                @for (evolucion of digimon.priorEvolutions; track $index) {
+                <div class="card m-3" style="width: 18rem">
+
+                    <img src={{evolucion.image}} alt="">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">{{evolucion.digimon}}</button>
+                        <p class="card-text"><strong>Evolutive Condition: </strong>{{evolucion.condition}}.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            </div>
+                            <small class="text-body-secondary">ID: {{evolucion.id}}</small>
+                        </div>
+                    </div>
+                </div>
+                }
+ 
+        </div>
+    </div>
+</main>
